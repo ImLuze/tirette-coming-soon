@@ -5,6 +5,8 @@ import React, { FunctionComponent } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { render } from 'react-dom';
 import WebFont from 'webfontloader';
+import icon from './assets/icon_white.svg';
+import logo from './assets/logo_white.svg';
 
 const App: FunctionComponent = () => {
   WebFont.load({
@@ -19,7 +21,17 @@ const App: FunctionComponent = () => {
         exact
         path="/"
         render={(): JSX.Element => (
-          <h1>Hello World!</h1>
+          <div className="container">
+            <img src={logo} className="logo" alt="Tirette logo" width="98" height="32" />
+            <img src={icon} className="icon" alt="Tirette icon" width="41" height="32" />
+            <h1>Coming Soon!</h1>
+            <span />
+            <p>
+              Tirette, pick-pocket proof jeans!
+              <br />
+              Coming this spring!
+            </p>
+          </div>
         )}
       />
     </Switch>

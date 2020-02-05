@@ -1,5 +1,48 @@
 @import './reset.css';
 
 h1 {
-  color: red;
+  color: white;
+  font-family: Helvetica;
+  font-size: 9rem;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.618;
+  font-family: Helvetica;
+  margin-top: 5.2rem;
+}
+
+span {
+  width: 12rem;
+  height: .4rem;
+  background-color: white;
+  margin-top: 1.6rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./../assets/bg.jpg');
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 2.4rem;
+}
+
+@media(max-width: 400px) {
+  h1 {
+    font-size: 7rem;
+  }
 }
