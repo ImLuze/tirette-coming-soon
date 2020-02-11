@@ -41,6 +41,13 @@ span {
   top: 2.4rem;
 }
 
+.copyright {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 1.6rem;
+  right: 1.6rem;
+}
+
 @media(max-width: 400px) {
   h1 {
     font-size: 7rem;

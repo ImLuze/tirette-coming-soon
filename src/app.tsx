@@ -31,6 +31,11 @@ const App: FunctionComponent = () => {
               <br />
               Coming this spring!
             </p>
+            <p className="copyright">
+              &copy;
+              {` ${new Date().getFullYear()} Tirette, all rights reserved. TIRETTE`}
+              &reg;, its logo and distinctive zipper are trademarks of Tirette.
+            </p>
           </div>
         )}
       />
